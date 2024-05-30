@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check-up!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" type="module" defer></script>
+</head>
+<body>
+<header>
+    <div class="content container">
+        <div class="logo">
+            <a href="../..">
+                <img src="/img/LogoText.svg" alt="Logo">
+            </a>
+        </div>
+        <button aria-expanded="false" class="hamburger" id="menu">
+                <span aria-hidden="true" class="icon">
+                    <span></span><span></span><span></span>
+                </span>
+        </button>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#nieuws">Nieuws</a></li>
+            <li><a href="./about">Info</a></li>
+            <li><a href="./praktijken/">Dokter praktijken</a></li>
+            <li><a href="./contact">Doe de checkup!</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="intro container">
+        <p>Verkouden? Pijn aan de knie? Of gewoon slecht in je vel?</p>
+        <h1>Doe de Check-up!</h1>
+        <p>Met een paar klikken hebben wij een oplossing!</p>
+        <div class="buttons">
+            <a href="../.." class="btn">Dokters in de buurt</a>
+            <a href="../.." class="btn">Doe de check-up!</a>
+        </div>
+    </section>
+    <hr>
+    <section id="nieuws" class="nieuws container">
+        <h2>Nieuws</h2>
+        <ul class="cards">
+            <li>
+                <div class="content">
+                    <h3>Labo 1</h3>
+                    <p>De basis van HTML.</p>
+                    <a href="./projects/labo01">Bekijk labo 1</a>
+                    <a href="./projects/labo01" class="overlay-link">Bekijk labo 1.</a>
+                </div>
+                <img src="./img/labo01.png" alt="">
+            </li>
+            <li>
+                <div class="content">
+                    <h3>Labo 2</h3>
+                    <p>De basis van CSS.</p>
+                    <a href="./projects/labo02">Bekijk labo 2</a>
+                    <a href="./projects/labo02" class="overlay-link">Bekijk labo 2</a>
+                </div>
+                <img src="./img/labo02.png" alt="">
+            </li>
+            <li>
+                <div class="content">
+                    <h3>Labo 3</h3>
+                    <p>begrijpen van structuren.</p>
+                    <a href="./projects/labo03">Bekijk labo 3</a>
+                    <a href="./projects/labo03" class="overlay-link">Bekijk labo 3</a>
+                </div>
+                <img src="./img/labo03.png" alt="">
+            </li>
+            <li>
+                <div class="content">
+                    <h3>Labo 4</h3>
+                    <p>Opstellen van Contactpagina.</p>
+                    <a href="./projects/labo04">Bekijk labo 4</a>
+                    <a href="./projects/labo04" class="overlay-link">Bekijk labo 4</a>
+                </div>
+                <img src="./img/labo04.png" alt="">
+            </li>
+        </ul>
+    </section>
+</main>
+<footer>
+    <p>Contacteer ons:</p>
+    <ul>
+        <li>info@checkup.be</li>
+        <li>012/34 56 87</li>
+        <li>Adreslaan 123</li>
+        <li>1000 Brussel</li>
+    </ul>
+</footer>
+</body>
+</html>

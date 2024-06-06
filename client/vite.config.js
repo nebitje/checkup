@@ -25,7 +25,9 @@ export default defineConfig({
                 // dat is netter
                 main: resolve(__dirname, 'src/index.html'),
                 vraag: resolve(__dirname, 'src/vraag/index.html'),
-                summary: resolve(__dirname, 'src/summary/index.html'),
+                summary: resolve(__dirname, 'src/checkup/index.html'),
+                dokters: resolve(__dirname, 'src/dokters/index.html'),
+
             },
         },
     },

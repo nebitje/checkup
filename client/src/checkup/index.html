@@ -39,6 +39,40 @@
 <main class="container">
     <h1>Check-up!</h1>
     <section>
+        <form id="checkupForm">
+            <label for="plaats">Waar heeft u last van?</label>
+            <select id="plaats" name="plaats">
+                <option value="hoofd">Hoofd</option>
+                <option value="keel">Keel</option>
+                <option value="nek">Nek</option>
+                <option value="schouders">Schouders</option>
+                <option value="armen">Armen</option>
+                <option value="handen">Handen</option>
+                <option value="borstkas">Borstkas</option>
+                <option value="buik">Buik</option>
+                <option value="benen">Benen</option>
+                <option value="voeten">Voeten</option>
+            </select>
+
+            <label>Heeft u last van koorts?</label>
+            <div class="keuzes">
+                <label><input type="radio" name="koorts" value="1"> Ja</label>
+                <label><input type="radio" name="koorts" value="0"> Nee</label>
+            </div>
+
+            <label>Heeft u last van braken?</label>
+            <div class="keuzes">
+                <label><input type="radio" name="braken" value="1"> Ja</label>
+                <label><input type="radio" name="braken" value="0"> Nee</label>
+            </div>
+
+            <label>Heeft u last van diarree?</label>
+            <div class="keuzes">
+                <label><input type="radio" name="diarree" value="1"> Ja</label>
+                <label><input type="radio" name="diarree" value="0"> Nee</label>
+            </div>
+            <button type="submit" class="btn"> versturen</button>
+        </form>
     </section>
 </main>
 <footer>
@@ -49,6 +83,7 @@
         <li>Adreslaan 123</li>
         <li>1000 Brussel</li>
     </ul>
+    <p>&copy; fictief product, enkel voor educatief doeleinde</p>
 </footer>
 </body>
 </html>

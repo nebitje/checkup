@@ -1,0 +1,21 @@
+.dokters{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem 8rem;
+}
+.catCard {
+    background-color: var(--primary);
+    color: var(--bg);
+    flex: .5 1 auto;
+    padding: 2rem 2rem 3rem 6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    /*align-items: flex-start;*/
+    position: relative;
+    animation: fadeIn .5s ease-in-out forwards;
+}

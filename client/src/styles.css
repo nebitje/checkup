@@ -278,10 +278,6 @@ footer ul li{
         justify-content: space-around;
     }
 
-    header .content {
-        justify-content: flex-start;
-    }
-
     header #menu {
         display: none;
     }

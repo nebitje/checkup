@@ -24,9 +24,13 @@ export default defineConfig({
                 // om goed te kunnen werken heb ik alle content in de 'src' folder gestopt
                 // dat is netter
                 main: resolve(__dirname, 'src/index.html'),
-                vraag: resolve(__dirname, 'src/vraag/index.html'),
-                summary: resolve(__dirname, 'src/checkup/index.html'),
+                info: resolve(__dirname, 'src/info/index.html'),
+                checkup: resolve(__dirname, 'src/checkup/index.html'),
                 dokters: resolve(__dirname, 'src/dokters/index.html'),
+                beheer: resolve(__dirname, 'src/beheer/index.html'),
+                addData: resolve(__dirname, 'src/beheer/addData/index.html'),
+                diagnose: resolve(__dirname, 'src/beheer/addData/diagnose/index.html'),
+                dokter: resolve(__dirname, 'src/beheer/addData/dokter/index.html')
 
             },
         },

@@ -7,20 +7,18 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema mydb
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `checkup` ;
 
 -- -----------------------------------------------------
 -- Schema mydb
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `checkup` DEFAULT CHARACTER SET utf8 ;
-USE `checkup` ;
+USE `checkupdb` ;
 
 -- -----------------------------------------------------
 -- Table `mydb`.`diagnoses`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `checkup`.`diagnoses` ;
+DROP TABLE IF EXISTS `checkupdb`.`diagnoses` ;
 
-CREATE TABLE IF NOT EXISTS `checkup`.`diagnoses` (
+CREATE TABLE IF NOT EXISTS `checkupdb`.`diagnoses` (
   `id` INT NOT NULL,
   `naam` VARCHAR(45) NOT NULL,
   `plaats` VARCHAR(45) NOT NULL,
@@ -34,9 +32,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `mydb`.`dokters`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `checkup`.`dokters` ;
+DROP TABLE IF EXISTS `checkupdb`.`dokters` ;
 
-CREATE TABLE IF NOT EXISTS `checkup`.`dokters` (
+CREATE TABLE IF NOT EXISTS `checkupdb`.`dokters` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `naam` VARCHAR(45) NOT NULL,
   `type` VARCHAR(45) NOT NULL,

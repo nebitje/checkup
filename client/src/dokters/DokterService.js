@@ -1,7 +1,8 @@
 const apiurl = import.meta.env.VITE_API_URL;
 
 export const getDokters = async () => {
-    const resp = await fetch(apiurl + "/checkup")
+    const resp = await fetch(apiurl + "/checkup/dokters")
+    console.log("data received")
     if (!resp.ok) {
         throw new Error("HTTP error! status" + resp.status)
     }
@@ -12,4 +13,3 @@ export const getDokters = async () => {
     console.log("dokters fetched!")
     return data
 }
-

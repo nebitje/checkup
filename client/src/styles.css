@@ -154,27 +154,33 @@ header .hamburger[aria-expanded= true] .icon span:nth-child(3) {
         display: none;
     }
 }
+
 /*main & intro*/
 
 main {
     text-align: center;
     margin-top: 3rem;
     min-height: calc(100vh - 130px);
+    margin-bottom: 4rem;
 }
 
 h1 {
-    margin: 0;
+    font-size: xxx-large;
+    margin-top: 2rem;
 }
 
 .intro p {
     margin: 0;
 }
-.buttons{
+
+.buttons {
     margin-top: 3rem;
     display: flex;
     justify-content: space-evenly;
 }
-.btn{
+
+.btn {
+    font-family: "Overpass", sans-serif;
     background-color: var(--primary);
     padding: 1rem;
     text-decoration: none;
@@ -183,17 +189,19 @@ h1 {
     border: 2px solid var(--black);
     transition: background-color 0.2s ease-in-out;
 }
-.btn:hover, .btn:focus-visible{
+
+.btn:hover, .btn:focus-visible {
     background-color: var(--hover);
 }
 
-hr{
+hr {
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding: 0.2rem;
     background-color: var(--primary);
     border: var(--primary);
 }
+
 /*nieuws*/
 
 .cards {
@@ -201,7 +209,6 @@ hr{
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-around;
-    margin-left: -2.5rem;
     margin-bottom: 3rem;
 }
 
@@ -210,7 +217,6 @@ hr{
     flex-direction: column;
     position: relative;
     border-radius: 0.5rem;
-    width: 100%;
     -webkit-box-shadow: 9px 10px 21px -13px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 9px 10px 21px -13px rgba(0, 0, 0, 0.75);
     box-shadow: 9px 10px 21px -13px rgba(0, 0, 0, 0.75);
@@ -229,7 +235,8 @@ hr{
     padding-left: 1rem;
     padding-bottom: 1rem;
 }
-.cards a{
+
+.cards a {
     color: var(--fourthairy);
 }
 
@@ -250,7 +257,7 @@ hr{
 
 /*footer*/
 
-footer{
+footer {
     background-color: var(--primary);
     margin: 0;
     padding: 1rem;
@@ -259,17 +266,22 @@ footer{
     flex-direction: column;
     align-items: center;
 }
-p{
+
+p {
     margin-bottom: 0;
 }
-ul{
+
+ul {
     padding: 0;
 }
-footer ul li{
+
+footer ul li {
     list-style: none;
 
 }
-
+footer a{
+    color: var(--text)
+}
 @media (min-width: 47.2rem) {
     header {
         background-color: var(--primary);
@@ -307,10 +319,12 @@ footer ul li{
     header nav ul li {
         margin: 1rem 2rem;
     }
-    .cards{
+
+    .cards {
         flex-wrap: nowrap;
     }
-    .cards li{
+
+    .cards li {
         width: inherit;
         padding: 1rem;
     }

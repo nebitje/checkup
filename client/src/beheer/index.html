@@ -5,13 +5,13 @@
     <meta name="viewport"
           content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Info</title>
+    <title>Beheer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="dokters.css">
+    <link rel="stylesheet" href="beheer.css">
     <script src="../menu.js" defer></script>
     <script src="main.js" type="module"></script>
 </head>
@@ -33,18 +33,24 @@
         <ul>
             <li><a href="../index.html#nieuws">Nieuws</a></li>
             <li><a href="../info/">Info</a></li>
-            <li><a href="./">Dokters</a></li>
+            <li><a href="../dokters/">Dokters</a></li>
             <li><a href="../checkup/">Doe de checkup!</a></li>
         </ul>
     </nav>
 </header>
 <main class="container">
-    <section>
-        <h1>Alle dokters</h1>
-        <hr>
-        <ul class="dokters" id =allDokters>
-        </ul>
-    </section>
+    <h1>Beheer</h1>
+    <form id="beheerForm">
+        <div>
+            <label for="name">Gebruikersnaam:</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="password">Wachtwoord:</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <button type="submit" class="btn">Inloggen</button>
+    </form>
 </main>
 <footer>
     <p>Contacteer ons:</p>
@@ -55,7 +61,7 @@
         <li>1000 Brussel</li>
     </ul>
     <p>&copy; fictief product, enkel voor educatief doeleinde</p>
-    <a href="../beheer/">Beheer</a>
+    <a href="./beheer/">Beheer</a>
 </footer>
 </body>
 </html>

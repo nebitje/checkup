@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Beheer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="../AddData.css">
+    <script src="../../../menu.js" defer></script>
+    <script src="main.js" type="module"></script>
+</head>
+<body>
+<header>
+    <div class="content">
+        <div class="logo">
+            <a href="../..">
+                <img src="/img/LogoText.svg" alt="Logo">
+            </a>
+        </div>
+        <button aria-expanded="false" class="hamburger" id="menu">
+                <span aria-hidden="true" class="icon">
+                    <span></span><span></span><span></span>
+                </span>
+        </button>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../../../index.html#nieuws">Nieuws</a></li>
+            <li><a href="../../../info/">Info</a></li>
+            <li><a href="../../../dokters/">Dokters</a></li>
+            <li><a href="../../../checkup/">Doe de checkup!</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+    <h1>Voeg dokter toe</h1>
+    <section>
+        <form id="dokterForm">
+            <h2>Naam</h2>
+            <div>
+                <label for="naam">Geef de naam in:</label>
+                <input type="text" name="naam" id="naam">
+            </div>
+            <hr>
+            <h2>Bevoegdheid</h2>
+            <div class="locatie">
+                <label for="type">Selecteer het juiste type:</label>
+                <select id="type" name="type">
+                    <option value="huisarts">Huisarts</option>
+                    <option value="chirurg">Chirurg</option>
+                    <option value="podoloog">Podoloog</option>
+                    <option value="psycholoog">Psycholoog</option>
+                    <option value="verpleegkundige">Verpleegkundige</option>
+                    <option value="arts">Arts</option>
+                    <option value="gynaecoloog">Gynaecoloog</option>
+                    <option value="dermatoloog">Dermatoloog</option>
+                    <option value="kinderarts">Kinderarts</option>
+                    <option value="neuroloog">Neuroloog</option>
+                    <option value="overig">Overig</option>
+                </select>
+            </div>
+            <hr>
+            <h2>Gegevens</h2>
+            <div>
+                <label for="adres">Geef het adres in:</label>
+                <input type="text" name="adres" id="adres">
+            </div>
+            <div>
+                <label for="nummer">Geef een telefoonnummer in:</label>
+                <input type="text" name="nummer" id="nummer">
+            </div>
+            <div>
+                <label for="email">Geef het E-Mail in:</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <hr>
+            <div>
+                <button type="submit" class="btn"> Voeg toe</button>
+            </div>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>Contacteer ons:</p>
+    <ul>
+        <li>info@checkup.be</li>
+        <li>012/34 56 87</li>
+        <li>Adreslaan 123</li>
+        <li>1000 Brussel</li>
+    </ul>
+    <p>&copy; fictief product, enkel voor educatief doeleinde</p>
+    <a href="../">Beheer</a>
+</footer>
+</body>
+</html>

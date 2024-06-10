@@ -1,21 +1,42 @@
+main h1{
+    padding-top: 2rem;
+    font-size: xxx-large;
+}
+
 .dokters{
-    margin: 0;
+    margin-top: 2rem;
     padding: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 4rem 8rem;
 }
-.catCard {
-    background-color: var(--primary);
-    color: var(--bg);
-    flex: .5 1 auto;
+.dokterCard {
+    -webkit-box-shadow: 9px 10px 21px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 10px 21px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 10px 21px -13px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    color: var(--text);
     padding: 2rem 2rem 3rem 6rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem 2rem;
-    /*align-items: flex-start;*/
     position: relative;
-    animation: fadeIn .5s ease-in-out forwards;
+    width: 100%;
+}
+.dokterCard h2{
+    font-size: xx-large;
+    margin: 0;
+}
+.dokterCard h3{
+    margin: 0;
+}
+.dokterCard iframe{
+    margin-top: 2rem;
+}
+@media (min-width: 47.2rem) {
+    .dokterCard{
+        width: inherit;
+    }
 }

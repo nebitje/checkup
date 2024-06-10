@@ -2,6 +2,103 @@ h1 {
     font-size: xxx-large;
     margin-top: 2rem;
 }
+
 main {
     text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-top: 1rem;
+}
+
+.locatie {
+    display: flex;
+    flex-direction: column;
+}
+
+.locatie select {
+    max-width: 70%;
+}
+
+.keuzes {
+    margin: 0;
+}
+
+form button {
+    width: 70%;
+    margin-bottom: 4rem;
+}
+
+hr {
+    width: 100%;
+}
+
+h2 {
+    margin: 0;
+}
+
+div {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.diagnoseCard {
+    -webkit-box-shadow: 9px 10px 21px -13px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 10px 21px -13px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 10px 21px -13px rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    color: var(--text);
+    padding: 2rem 2rem 3rem 6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    position: relative;
+}
+.diagnoseCard p,h3,li{
+    margin: 0;
+}
+.diagnoseCard p:last-child{
+    font-weight: bold;
+    font-size: small;
+}
+legend {
+    margin-bottom: 0.5em;
+}
+
+label{
+    text-align: left;
+}
+label > span.field-label, legend > span.field-label {
+    display: block;
+    font-size: 1.3em;
+    font-weight: 600;
+
+}
+
+label > span.field-error, legend > span.field-error {
+    display: block;
+    margin-top: 0.25em;
+    color: #C80000FF;
+}
+@media (min-width: 47.2rem) {
+    form button{
+        width: 30%;
+    }
+    .locatie select{
+        width: 30%;
+    }
+    .diagnoseCard{
+        width: 50%;
+    }
 }

@@ -1,0 +1,76 @@
+/*KEUZE PAGINA*/
+.beheerBtns{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+/*DIAGNOSE EN DOKTER ADDATA PAGINAS*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+form div {
+    margin-top: 1rem;
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+}
+
+input[type="text"]{
+    width: 100%;
+}
+
+.locatie {
+    display: flex;
+    flex-direction: column;
+}
+
+.locatie select {
+    max-width: 100%;
+
+}
+.keuzes {
+    margin: 0;
+    align-items: self-start;
+}
+
+form button {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+hr {
+    width: 100%;
+}
+
+h2 {
+    margin: 0;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+legend {
+    margin-bottom: 0.5em;
+}
+
+label{
+    text-align: left;
+}
+label > span.field-label, legend > span.field-label {
+    display: block;
+    font-size: 1.3em;
+    font-weight: 600;
+
+}
+
+label > span.field-error, legend > span.field-error {
+    display: block;
+    margin-top: 0.25em;
+    color: #C80000FF;
+}

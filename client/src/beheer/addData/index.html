@@ -5,15 +5,14 @@
     <meta name="viewport"
           content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Info</title>
+    <title>Check-up!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="dokters.css">
-    <script src="../menu.js" defer></script>
-    <script src="main.js" type="module"></script>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="AddData.css">
+    <script src="../../menu.js" defer></script>
 </head>
 <body>
 <header>
@@ -31,20 +30,20 @@
     </div>
     <nav>
         <ul>
-            <li><a href="../index.html#nieuws">Nieuws</a></li>
-            <li><a href="../info/">Info</a></li>
-            <li><a href="./">Dokters</a></li>
-            <li><a href="../checkup/">Doe de checkup!</a></li>
+            <li><a href="../../index.html#nieuws">Nieuws</a></li>
+            <li><a href="../../info/">Info</a></li>
+            <li><a href="../../dokters/">Dokters</a></li>
+            <li><a href="../../checkup/">Doe de checkup!</a></li>
         </ul>
     </nav>
 </header>
 <main class="container">
-    <section>
-        <h1>Alle dokters</h1>
-        <hr>
-        <ul class="dokters" id =allDokters>
-        </ul>
-    </section>
+    <h1>Beheer</h1>
+    <div class="beheerBtns">
+        <a class="btn" href="./diagnose/">Voeg diagnose toe</a>
+        <a class="btn" href="./dokter/">Voeg dokter toe</a>
+    </div>
+    <div class="formContainer"></div>
 </main>
 <footer>
     <p>Contacteer ons:</p>
@@ -55,7 +54,7 @@
         <li>1000 Brussel</li>
     </ul>
     <p>&copy; fictief product, enkel voor educatief doeleinde</p>
-    <a href="../beheer/">Beheer</a>
+    <a href="./">Beheer</a>
 </footer>
 </body>
 </html>
